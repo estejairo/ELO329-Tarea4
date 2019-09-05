@@ -186,13 +186,6 @@ void Controlador::manageTraffic(){
     }
     //Se imprime el estado actual del semaforo
     std::cout<<state<<"\t"<<*semp1norteA<<"\t"<<*sempsportingB<<"\t"<<*sem1<<"\t"<<*semg2<<"\t"<<*sem3<<"\t"<<*semg4<<"\t"<<*sem5<<std::endl;
-//    //Se mantiene el estado por 1 segundo
-//    try{
-//        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
-//        counter = counter + 1;
-//    } catch(...){
-//        std::cout<<"Interrupcion"<<std::endl;
-    //    }
 }
 
 int Controlador::getstate()

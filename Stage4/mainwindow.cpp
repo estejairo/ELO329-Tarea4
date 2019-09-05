@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
     //Imagenes Semaforos
     QPixmap sem1(":rojo.png");
     QPixmap sem2(":giroder.png");
@@ -22,11 +23,13 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->sem5->setPixmap(sem5.scaled(51,81));
     ui->semA->setPixmap(semA.scaled(51,81));
     ui->semB->setPixmap(semB.scaled(51,81));
+
     //Imagenes Botones
     //-------Peatonal----
     paintbuttonOff();
     //----Inductor---
     paintIndOff();
+
     //Timer
     timer= new QTimer(this);
     timerpaint=new QTimer(this);
@@ -111,10 +114,12 @@ void MainWindow::paintIndOff()
     ui->inductor->setIcon(ButtonIconInductoroff);
     ui->inductor->setIconSize(QSize(251,71));
 }
-//enum TrafficLightState{STOP=0,TRANSITION=1,FOLLOW=2};
+
+
+//Pinta los semaforos segun su estado
 void MainWindow::painttraffics()
 {
-    QPixmap sem1V(":verde.png");
+    QPixmap sem1V(":verdeizq.png");
     QPixmap sem1A(":amarillo.png");
     QPixmap sem1R(":rojo.png");
     QPixmap sem2On(":giroder.png");
@@ -124,7 +129,7 @@ void MainWindow::painttraffics()
     QPixmap sem3R(":rojo.png");
     QPixmap sem4On(":giroizq.png");
     QPixmap sem4Off(":girooff.jpg");
-    QPixmap sem5V(":verde.png");
+    QPixmap sem5V(":verdearriba.png");
     QPixmap sem5A(":amarillo.png");
     QPixmap sem5R(":rojo.png");
     QPixmap semAV(":verdepeaton.png");

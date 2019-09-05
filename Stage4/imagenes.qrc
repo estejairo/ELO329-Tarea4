@@ -12,5 +12,7 @@
         <file>girooff.jpg</file>
         <file>rojopeaton.png</file>
         <file>verdepeaton.png</file>
+        <file>verdearriba.png</file>
+        <file>verdeizq.png</file>
     </qresource>
 </RCC>
