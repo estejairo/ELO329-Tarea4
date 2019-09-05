@@ -1,0 +1,10 @@
+release/controlador.o
+release/detectorrequerimiento.o
+release/main.o
+release/mainwindow.o
+release/semaforodegiro.o
+release/semaforop.o
+release/trafficlight.o
+release/trafficview.o
+release/qrc_imagenes.o
+release/moc_mainwindow.o
