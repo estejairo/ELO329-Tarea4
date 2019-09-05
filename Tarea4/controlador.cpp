@@ -15,7 +15,7 @@ Controlador::Controlador(SemaforoP *semaforopA, SemaforoP *semaforopB, SemaforoD
     sem5 = semaforo5;
     //Semaforos de Giro
     semg2 = semaforog2;
-    semg4 = semaforog2;
+    semg4 = semaforog4;
     //Semaforos peatonales
     semp1norteA = semaforopA;
     sempsportingB = semaforopB;
@@ -141,7 +141,7 @@ void Controlador::manageTraffic(){
             //Si se acaba el tiempo en verde, se cambia de estado
             else if (currentYellowTime >= sem1->getTransitionTime()){
                 currentYellowTime = 1;
-                state = 5;
+                state = 1;
                 sem1->turnStop();
                 semg2->turnRedLightOn();
                 sempsportingB->turnGreenLightOn();
@@ -185,7 +185,7 @@ void Controlador::manageTraffic(){
             std::cout<<"\n Error, estado no existente!"<<std::endl;
     }
     //Se imprime el estado actual del semaforo
-    std::cout<<"count"<<"\t"<<*semp1norteA<<"\t"<<*sempsportingB<<"\t"<<*sem1<<"\t"<<*semg2<<"\t"<<*sem3<<"\t"<<*semg4<<"\t"<<*sem5<<std::endl;
+    std::cout<<state<<"\t"<<*semp1norteA<<"\t"<<*sempsportingB<<"\t"<<*sem1<<"\t"<<*semg2<<"\t"<<*sem3<<"\t"<<*semg4<<"\t"<<*sem5<<std::endl;
 //    //Se mantiene el estado por 1 segundo
 //    try{
 //        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
