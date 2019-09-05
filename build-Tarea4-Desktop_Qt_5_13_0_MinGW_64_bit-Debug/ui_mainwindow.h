@@ -39,7 +39,6 @@ public:
     QLabel *sem5;
     QLabel *sem1;
     QLabel *semB;
-    QLabel *semg1;
     QLabel *sem2;
     QLabel *sem4;
     QLabel *semA;
@@ -485,10 +484,6 @@ public:
         semB->setObjectName(QString::fromUtf8("semB"));
         semB->setGeometry(QRect(180, 330, 51, 81));
         semB->setFrameShape(QFrame::Box);
-        semg1 = new QLabel(centralWidget);
-        semg1->setObjectName(QString::fromUtf8("semg1"));
-        semg1->setGeometry(QRect(130, 220, 41, 41));
-        semg1->setFrameShape(QFrame::Box);
         sem2 = new QLabel(centralWidget);
         sem2->setObjectName(QString::fromUtf8("sem2"));
         sem2->setGeometry(QRect(240, 220, 41, 41));
@@ -594,7 +589,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 894, 23));
+        menuBar->setGeometry(QRect(0, 0, 894, 21));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -617,7 +612,6 @@ public:
         sem5->setText(QString());
         sem1->setText(QString());
         semB->setText(QString());
-        semg1->setText(QString());
         sem2->setText(QString());
         sem4->setText(QString());
         semA->setText(QString());
