@@ -3,3 +3,6 @@
 *.o
 build**
 *.pro.user
+debug**
+release**
+.qmake.stash

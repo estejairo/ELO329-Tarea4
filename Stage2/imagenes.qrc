@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>OnButton.png</file>
+        <file>OffButton.png</file>
+        <file>amarillo.png</file>
+        <file>rojo.png</file>
+        <file>rojopeaton.png</file>
+        <file>verdepeaton.png</file>
+        <file>verdearriba.png</file>
+        <file>verdeizq.png</file>
+    </qresource>
+</RCC>
